@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayu Julianto | Professional Web Developer & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <span class="logo">Bayu<span>Julianto</span></span>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#products">Layanan</a></li>
+            </ul>
+
+            <a href="https://wa.me/625369954235" class="wa-action-btn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Open for Projects</span>
+                <h1>Membangun Solusi Digital dengan <span class="highlight">Presisi</span></h1>
+                <p>Membantu bisnis bertransformasi digital melalui website yang responsif, cepat, dan berorientasi pada penjualan.</p>
+                <div class="hero-btns">
+                    <button onclick="scrollToSection('products')" class="btn-primary-pro">
+                        <span>Mulai Proyek</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button onclick="scrollToSection('experience')" class="btn-secondary-pro">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Track Record</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-img">
+    <div class="img-wrapper">
+        <img src="logo.png" alt="Bayu Julianto - Web Developer">
+        
+        <div class="img-circle-bg"></div>
+    </div>
+</div>
+        </div>
+    </header>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Kenapa Memilih Layanan Saya?</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Ketepatan Waktu</h3>
+                    <p>Deadline adalah prioritas utama. Saya menjamin pengiriman proyek sesuai jadwal yang disepakati bersama.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Kualitas Premium</h3>
+                    <p>Setiap baris kode dan elemen desain melalui proses pengecekan standar tinggi untuk hasil terbaik.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Website Anda akan tampil sempurna di smartphone, tablet, maupun desktop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman & Portofolio</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time-dot"></div>
+                    <span class="date">2022 - Sekarang</span>
+                    <h4>Independent Web Developer (Freelance)</h4>
+                    <p>Menyelesaikan berbagai proyek landing page UMKM dengan fokus pada konversi tinggi dan skor kecepatan akses yang optimal.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="time-dot"></div>
+                    <span class="date">2021 - 2022</span>
+                    <h4>UI/UX Designer - Personal Projects</h4>
+                    <p>Merancang antarmuka website modern menggunakan Figma dengan pendekatan User-Centered Design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Layanan & Harga</h2>
+            <div class="product-grid">
+                <div class="card featured">
+                    <div class="card-tag">Paling Populer</div>
+                    <h3>Website Landing Page</h3>
+                    <p>Cocok untuk promosi produk atau jasa agar tampil profesional di mata klien.</p>
+                    <p class="price">Mulai Rp 1.500.000</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Desain Eksklusif</li>
+                        <li><i class="fas fa-check"></i> Integrasi WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Optimasi Kecepatan</li>
+                    </ul>
+                    <button class="btn-buy" onclick="kirimWA('Landing Page')">Pesan Sekarang</button>
+                </div>
+                <div class="card">
+                    <h3>Redesign Website</h3>
+                    <p>Ubah tampilan website lama Anda menjadi lebih modern, responsif, dan elegan.</p>
+                    <p class="price">Mulai Rp 800.000</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Perbaikan UI/UX</li>
+                        <li><i class="fas fa-check"></i> SEO Dasar</li>
+                        <li><i class="fas fa-check"></i> Mobile Optimized</li>
+                    </ul>
+                    <button class="btn-buy" onclick="kirimWA('Redesign Web')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bayu Julianto Portfolio. Kualitas & Ketepatan Waktu adalah Prioritas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
